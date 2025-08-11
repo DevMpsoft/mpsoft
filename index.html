@@ -1,10 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
-    <title>Test Pipeline MPS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manutenzione in corso</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            color: #333;
+        }
+        .container {
+            max-width: 500px;
+            padding: 20px;
+        }
+        svg {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.1rem;
+            color: #666;
+        }
+    </style>
 </head>
 <body>
-
+<div class="container">
+    <!-- Icona cono lavori in corso -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+        <path fill="#f39c12" d="M32 2L2 62h60L32 2z"/>
+        <path fill="#ecf0f1" d="M32 14L10 54h44L32 14z"/>
+        <path fill="#f39c12" d="M32 26L18 54h28L32 26z"/>
+    </svg>
+    <h1>Manutenzione in corso</h1>
+    <p>Il sito è in fase di restyling...<br>
+        promettiamo che tornerà più in forma di noi dopo la palestra 💪</p>
+</div>
 </body>
 </html>
