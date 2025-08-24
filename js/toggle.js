@@ -15,9 +15,9 @@ fetch('config.json')
             // Carica i componenti modulari
             loadComponent('components/hero-header.html', 'hero-header');
             loadComponent('components/hero.html', 'hero');
+            loadComponent('components/footer.html', 'footer');
 
             //loadComponent('components/contact.html', 'contact');
-            //loadComponent('components/footer.html', 'footer');
         } else {
             maintenance.style.display = 'flex';
             main.style.display = 'none';
