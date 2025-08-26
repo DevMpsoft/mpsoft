@@ -1,19 +1,26 @@
 <!-- Hero Section -->
+<section id="hero">
     <div class="container mx-auto px-6 lg:px-12 py-16 grid grid-cols-1 md:grid-cols-2 items-center gap-8">
 
         <!-- Testo -->
         <div class="text-center md:text-left">
             <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
-                La tua <span class="text-blue-600">professionalità</span> online
+                <span data-i18n="hero_title_part1">La tua</span>
+                <span class="text-blue-600" data-i18n="hero_title_part2">professionalità</span>
+                <span data-i18n="hero_title_part3">online</span>
             </h1>
-            <p class="mt-4 text-lg text-gray-600">
+            <p class="mt-4 text-lg text-gray-600" data-i18n="hero_subtitle">
                 Offro servizi di consulenza per aiutare aziende e professionisti a crescere nel digitale.
             </p>
             <div class="mt-6 flex justify-center md:justify-start gap-4">
-                <a href="#contatti" class="bg-blue-600 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition">
-                    Contattami
+                <a href="#contatti"
+                   class="bg-blue-600 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition"
+                   data-i18n="hero_cta_contact">
+                    Contattaci
                 </a>
-                <a href="#servizi" class="border border-blue-600 text-blue-600 px-6 py-3 rounded-lg text-lg font-semibold hover:bg-blue-50 transition">
+                <a href="#servizi"
+                   class="border border-blue-600 text-blue-600 px-6 py-3 rounded-lg text-lg font-semibold hover:bg-blue-50 transition"
+                   data-i18n="hero_cta_services">
                     Scopri di più
                 </a>
             </div>
@@ -21,8 +28,10 @@
 
         <!-- Immagine -->
         <div class="h-full w-full clip-diagonal md:clip-diagonal-none">
-            <img src="https://www.unioneprofessionisti.com/wp-content/uploads/2023/11/corsi-di-formazione.jpg" alt="Immagine professionale"
+            <img src="https://www.unioneprofessionisti.com/wp-content/uploads/2023/11/corsi-di-formazione.jpg"
+                 alt="Immagine professionale"
                  class="h-full w-full object-cover rounded-2xl md:rounded-none">
         </div>
 
     </div>
+</section>

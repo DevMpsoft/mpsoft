@@ -13,11 +13,12 @@ fetch('config.json')
             main.style.display = 'block';
 
             // Carica i componenti modulari
-            loadComponent('components/hero-header.html', 'hero-header');
-            loadComponent('components/hero.html', 'hero');
+            loadComponent('components/hero-header.html', 'hero-header', initMobileMenuLinks);
+            loadComponent('components/hero.html', 'hero', () => loadLanguage(currentLang));
+            loadComponent('components/services.html', 'services');
+            loadComponent('components/feedback.html', 'feedback', initCarousel);
+            loadComponent('components/contact.html', 'contact');
             loadComponent('components/footer.html', 'footer');
-
-            //loadComponent('components/contact.html', 'contact');
         } else {
             maintenance.style.display = 'flex';
             main.style.display = 'none';
@@ -25,10 +26,15 @@ fetch('config.json')
     });
 
 // Funzione per caricare componenti HTML
-function loadComponent(url, targetId) {
+// Funzione per caricare componenti HTML con callback
+function loadComponent(url, targetId, callback) {
     fetch(url)
         .then(res => res.text())
         .then(html => {
             document.getElementById(targetId).innerHTML = html;
+
+            // Esegui callback se fornita
+            if (callback) callback();
         });
 }
+

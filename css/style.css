@@ -7,3 +7,17 @@
         clip-path: none; /* Su mobile niente taglio per evitare problemi */
     }
 }
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+.scrollbar-hide {
+    -ms-overflow-style: none;  /* IE e Edge */
+    scrollbar-width: none;     /* Firefox */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
