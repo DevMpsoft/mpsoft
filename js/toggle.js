@@ -13,7 +13,7 @@ fetch('config.json')
             main.style.display = 'block';
 
             // Carica i componenti modulari
-            loadComponent('components/hero-header.html', 'hero-header', initMobileMenuLinks);
+            loadComponent('components/header.html', 'hero-header', initMobileMenuLinks, () => loadLanguage(currentLang));
             loadComponent('components/hero.html', 'hero', () => loadLanguage(currentLang));
             loadComponent('components/services.html', 'services');
             loadComponent('components/feedback.html', 'feedback', initCarousel);

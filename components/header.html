@@ -1,19 +1,19 @@
 <!-- Hero Header: logo, nav, mobile menu -->
-<header class="absolute inset-x-0 top-0 z-50">
-    <nav aria-label="Global" class="flex items-center justify-between p-6 lg:px-8">
+<header class="fixed inset-x-0 top-0 z-50 bg-gray-900 shadow-lg">
+    <nav aria-label="Global" class="flex items-center justify-between lg:px-8 bg-gray-900">
         <!-- Logo -->
         <div class="flex lg:flex-1">
             <a href="#" class="-m-1.5 p-1.5">
                 <span class="sr-only">Your Company</span>
-                <img src="https://img.icons8.com/?size=100&id=VkkAxxw8UOST&format=png&color=000000"
-                     alt="Logo Professionista" class="h-8 w-auto"/>
+                <img src="https://i.ibb.co/4R21Cb1h/image-1-removebg-preview.png"
+                     alt="Logo Professionista" class="h-16 w-auto"/>
             </a>
         </div>
 
         <!-- Mobile menu button -->
         <div class="flex lg:hidden">
             <button type="button" command="show-modal" commandfor="mobile-menu"
-                    class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-black-200">
+                    class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white">
                 <span class="sr-only">Open main menu</span>
                 <!-- Icona hamburger -->
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="size-6">
@@ -24,16 +24,18 @@
         </div>
 
         <!-- Menu desktop -->
-        <div class="hidden lg:flex lg:gap-x-12">
-            <a href="#hero" class="text-sm font-semibold text-black">Chi siamo</a>
-            <a href="#servizi" class="text-sm font-semibold text-black">Servizi</a>
-            <a href="#contatti" class="text-sm font-semibold text-black">Contatti</a>
-            <a href="#feedback" class="text-sm font-semibold text-black">Recensioni</a>
+        <div class="hidden lg:flex flex-1 justify-center gap-x-12 whitespace-nowrap">
+            <a href="#hero" class="text-sm font-semibold text-white" data-i18n="header_about_us" >Chi siamo</a>
+            <a href="#servizi" class="text-sm font-semibold text-white" data-i18n="header_services">Servizi</a>
+            <a href="#feedback" class="text-sm font-semibold text-white" data-i18n="header_feedbacks">Recensioni</a>
+            <a href="#contatti" class="text-sm font-semibold text-white" data-i18n="header_contacts">Contatti</a>
         </div>
 
-        <!-- Login -->
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-            <!-- <a href="#" class="text-sm font-semibold text-white">Log in <span aria-hidden="true">&rarr;</span></a>-->
+            <div class="flex items-center space-x-3">
+                <button class="lang-btn text-xl" data-lang="en" aria-label="Switch to English" onclick="switchLanguage('en')" >🇬🇧</button>
+                <button class="lang-btn text-xl" data-lang="it" aria-label="Cambia in Italiano" onclick="switchLanguage('it')">🇮🇹</button>
+            </div>
         </div>
     </nav>
 
@@ -61,10 +63,10 @@
                                 <a href="#hero" class="block px-3 py-2 text-base font-semibold text-white hover:bg-white/5">Chi
                                     Siamo</a>
                                 <a href="#servizi" class="block px-3 py-2 text-base font-semibold text-white hover:bg-white/5">Servizi</a>
-                                <a href="#contatti"
-                                   class="block px-3 py-2 text-base font-semibold text-white hover:bg-white/5">Contatti</a>
                                 <a href="#feedback"
                                    class="block px-3 py-2 text-base font-semibold text-white hover:bg-white/5">Recensioni</a>
+                                <a href="#contatti"
+                                class="block px-3 py-2 text-base font-semibold text-white hover:bg-white/5">Contatti</a>
                             </div>
                             <div class="py-6">
                                 <button onclick="switchLanguage('en')">🇬🇧</button>
@@ -77,4 +79,17 @@
             </div>
         </dialog>
     </el-dialog>
+
+    <!DOCTYPE html>
+    <html lang="it">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Footer Palette Demo</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="min-h-screen flex flex-col bg-gray-50">
+
+    <div class="flex-grow"></div>
+
 </header>
